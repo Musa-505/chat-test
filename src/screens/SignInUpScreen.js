@@ -34,7 +34,7 @@ const SignInUpScreen = () => {
         };
 
         checkIfSignedIn();
-    }, []);
+    }, [navigate]);
 
     const handleImagePick = (event) => {
         const file = event.target.files[0];
@@ -81,8 +81,6 @@ const SignInUpScreen = () => {
                 await updateDoc(userRef, {
                     lastSignInTime: new Date(),
                 });
-
-                const userData = await getUserData(user.uid);
 
                 navigate('/home');
             }
