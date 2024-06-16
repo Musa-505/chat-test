@@ -1,0 +1,120 @@
+.container_chat {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: -webkit-fill-available;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.backButton {
+    position: absolute;
+    left: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #007bff;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.userPicture {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.messagesContainer {
+    flex: 1;
+    width: -webkit-fill-available;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.messageList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sentMessageContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.receivedMessageContainer {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.sentMessage {
+    max-width: 80%;
+    margin: 5px;
+    background-color: #DCF8C6;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.receivedMessage {
+    max-width: 80%;
+    margin: 5px;
+    background-color: #8588ed;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    width: -webkit-fill-available;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.input {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.sendButton {
+    padding: 10px;
+    background-color: #3b5998;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.emptyText {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
